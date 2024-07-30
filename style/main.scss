@@ -1,0 +1,80 @@
+// параметри шрифту (назва, розмір, колір, жирність), висота рядка, опис параметрів фону (фоновий колір), опис станів інтерактивних елементів, всі кольори в root
+
+html {
+    box-sizing: border-box;
+    line-height: 1.5;
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 120%;
+    color: rgb(153, 153, 153);
+    padding-inline-start: 2vh;
+    padding-inline-end: 2vh;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+// .page-container {
+//     max-width: 1170px;
+//     margin: 0 auto;
+// }
+
+input,
+button,
+select,
+textarea {
+font: inherit;
+}
+
+// hidden page tittle
+
+
+
+
+p {
+    margin: initial;
+    }
+
+// :empty {
+//     display: none;
+// }
+
+
+@import "base/fonts"; 
+@import "base/vars";
+@import "base/settings";
+@import "base/extends";
+@import "base/mixins";
+
+@import "components/grid";
+@import "components/list";
+@import "components/btn";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/hero";
+@import "layout/_WhyWe";
+@import "layout/items";
+@import "layout/ussay";
+@import "layout/order";
+
+@import "base/media";
+
+
